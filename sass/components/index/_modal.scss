@@ -144,6 +144,10 @@
   color: var(--primary-text-color);
 }
 
+.checkbox__input:focus + .checkbox__icon {
+  border: 2px solid var(--accent-color);
+}
+
 .checkbox__input:checked + .checkbox__icon {
   background-color: var(--accent-color);
   border-color: var(--accent-color);
