@@ -69,44 +69,44 @@
   .address__list .address__item:not(:last-child) {
     margin-bottom: 9px;
   }
-  
-  .footer-join__title {
-    margin-bottom: 20px;
-    display: block;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--primary-white-color);
+
+  .footer-join {
+    &__title {
+      margin-bottom: 20px;
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--primary-white-color);
+    }
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      gap: 10px;
+    }
+
+    &__link {
+      position: relative;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.1);
+      color: var(--primary-white-color);
+      transition: background-color var(--transition-duration) var(--cubic-bezier);
+      &:hover,
+      &:focus {
+        background-color:  var(--accent-color);
+    }
+    }
   }
-  
-  .footer-join__list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    gap: 10px;
-  }
-  
-  .footer-join__link {
-    position: relative;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--primary-white-color);
-    transition: background-color var(--transition-duration) var(--cubic-bezier);
-  }
-  
-  .footer-join__link:hover,
-  .footer-join__link:focus {
-    background-color:  var(--accent-color);
-  }
-  
+
   .footer-join__icon {
     fill: currentColor;
   }
@@ -145,6 +145,12 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     color: var(--primary-white-color);
   }
+
+  .form-subscription .form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
   
   .footer-subscribe__button {
     gap: 10px;
@@ -168,7 +174,6 @@
     color: var(--primary-white-color);
     transition: background-color var(--transition-duration) var(--cubic-bezier);
     cursor: pointer;
-    
   }
   
   .footer-subscribe__button:hover {

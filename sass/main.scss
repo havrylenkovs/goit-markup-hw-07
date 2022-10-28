@@ -4,11 +4,13 @@
 @import './base/common';
 @import './base/reset';
 
-@import './components/page-header';
+@import './layouts/page-header';
+@import './layouts/page-footer';
+
 @import './components/index/hero';
-@import './components/modal';
+@import './components/index/modal';
 @import './components/index/features';
 @import './components/index/our-works';
 @import './components/index/our-team';
 @import './components/index/regular-customers';
-@import './components/page-footer';
+
